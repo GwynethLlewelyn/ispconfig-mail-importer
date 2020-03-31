@@ -25,7 +25,7 @@ In spite of the promising title, for now, this will just import mail aliases usi
 
 Allegedly, there used to exist an earlier script to do the same, but I couldn't find it. So basically I developed my own format.
 
-`mail_forward_add.php` will load a CSV with email addresses to forward, in the format:
+`mail_forward_add_csv.php` will load a CSV with email addresses to forward, in the format:
 
 - **server_id** (usually 1)
 - **source** origin@registereddomain.tld (see note above; must be a registered domain on the ISPConfig 3 backend) 
@@ -37,4 +37,4 @@ Allegedly, there used to exist an earlier script to do the same, but I couldn't 
 
 ## Running the application
 
-`php mail_forward_add.php aliases.csv`
+`php mail_forward_add_csv.php aliases.csv`
