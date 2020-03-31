@@ -53,10 +53,10 @@ if (($handle = fopen($argv[1], "r")) !== FALSE) {
 				'active' => $data[4] ?? 'y'
 			);
 
-// 				  $affected_rows = $client->mail_forward_add($session_id, $client_id, $params);
-// 				  echo "Forwarding ID: " . $affected_rows . PHP_EOL;
+			$affected_rows = $client->mail_forward_add($session_id, $client_id, $params);
+			echo "Forwarding ID: " . $affected_rows . PHP_EOL;
 
-			var_dump($params);
+			// var_dump($params);
 		
 			if($client->logout($session_id)) {
 				echo 'Logged out.' . PHP_EOL;
@@ -69,8 +69,5 @@ if (($handle = fopen($argv[1], "r")) !== FALSE) {
 		}
 	}
 fclose($handle);
-
-
-
 ?>
 
